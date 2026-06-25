@@ -1,0 +1,8 @@
+{
+  "name": "展务系统 HTML 原型转 Figma 可编辑稿",
+  "id": "exhibition-service-html-to-figma",
+  "api": "1.0.0",
+  "main": "code.js",
+  "ui": "ui.html",
+  "editorType": ["figma"]
+}

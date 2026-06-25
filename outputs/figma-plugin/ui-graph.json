@@ -1,0 +1,67 @@
+{
+  "version": "3.0.1",
+  "layoutPolicy": {
+    "mapping": "html-dom-order",
+    "pcHierarchy": ["PageFrame", "Sidebar", "Main", "Topbar", "Content", "Header", "Toolbar", "PrimaryModule", "SecondaryModule"],
+    "miniHierarchy": ["PageFrame", "Header", "Content", "Cards", "BottomNav"],
+    "autoLayout": true,
+    "absoluteLayout": false,
+    "modalPolicy": "separate-overlay-page"
+  },
+  "pageGroups": {
+    "admin": ["admin-dashboard", "admin-exhibition", "admin-supplier", "admin-enterprise", "admin-enterprise-review", "admin-review-green", "admin-review-raw", "admin-notice", "admin-message", "admin-settings", "admin-cert"],
+    "enterprise": ["dashboard", "basic-info", "product-info", "brand-info", "booth-standard", "booth-green", "booth-raw", "notice", "progress", "message"],
+    "supplier": ["supplier-green", "supplier-standard", "supplier-raw", "supplier-message"],
+    "operator": ["operator-dashboard", "operator-exhibition", "operator-booth", "operator-green", "operator-notice", "operator-cert", "operator-message"],
+    "mini": ["mini-home", "mini-enterprise-info", "mini-product-info", "mini-upload", "mini-booth", "mini-notice", "mini-progress", "mini-message", "mini-profile"]
+  },
+  "routes": [
+    { "from": "admin-exhibition", "event": "table-row-click", "to": "admin-exhibition-detail" },
+    { "from": "admin-supplier", "event": "table-row-click", "to": "admin-supplier-detail" },
+    { "from": "admin-enterprise", "event": "table-row-click", "to": "admin-enterprise-detail" },
+    { "from": "admin-enterprise", "event": "review-button-click", "to": "admin-enterprise-review" },
+    { "from": "admin-review-green", "event": "table-row-click", "to": "admin-green-detail" },
+    { "from": "admin-review-raw", "event": "table-row-click", "to": "admin-raw-detail" },
+    { "from": "admin-cert", "event": "table-row-click", "to": "admin-cert-detail" },
+    { "from": "basic-info", "event": "edit-button-click", "to": "basic-info-edit" },
+    { "from": "booth-standard", "event": "list-item-click", "to": "booth-standard-detail" },
+    { "from": "booth-standard", "event": "edit-button-click", "to": "booth-standard-edit" },
+    { "from": "booth-green", "event": "list-item-click", "to": "booth-green-detail" },
+    { "from": "booth-green", "event": "edit-button-click", "to": "booth-green-edit" },
+    { "from": "booth-raw", "event": "list-item-click", "to": "booth-raw-detail" },
+    { "from": "booth-raw", "event": "edit-button-click", "to": "booth-raw-edit" },
+    { "from": "progress", "event": "list-item-click", "to": "progress-detail" },
+    { "from": "message", "event": "list-item-click", "to": "message-detail" },
+    { "from": "supplier-green", "event": "list-item-click", "to": "supplier-green-detail" },
+    { "from": "supplier-standard", "event": "list-item-click", "to": "supplier-standard-detail" },
+    { "from": "supplier-raw", "event": "list-item-click", "to": "supplier-raw-detail" },
+    { "from": "supplier-message", "event": "list-item-click", "to": "supplier-message-detail" },
+    { "from": "operator-exhibition", "event": "list-item-click", "to": "operator-exhibition-detail" },
+    { "from": "operator-booth", "event": "list-item-click", "to": "operator-booth-detail" },
+    { "from": "operator-green", "event": "list-item-click", "to": "operator-green-detail" },
+    { "from": "operator-cert", "event": "list-item-click", "to": "operator-cert-detail" },
+    { "from": "operator-message", "event": "list-item-click", "to": "operator-message-detail" },
+    { "from": "mini-home", "event": "card-click-enterprise-info", "to": "mini-enterprise-info" },
+    { "from": "mini-home", "event": "card-click-progress", "to": "mini-progress" },
+    { "from": "mini-home", "event": "card-click-notice", "to": "mini-notice" },
+    { "from": "mini-booth", "event": "list-item-click", "to": "mini-booth-detail" },
+    { "from": "mini-progress", "event": "list-item-click", "to": "mini-progress-detail" },
+    { "from": "mini-message", "event": "list-item-click", "to": "mini-message-detail" },
+    { "from": "mini-notice", "event": "share-button-click", "to": "mini-share" },
+    { "from": "mini-profile", "event": "cert-button-click", "to": "mini-cert" }
+  ],
+  "prototypeRules": [
+    { "selector": "SidebarItem", "trigger": "ON_CLICK", "action": "NODE" },
+    { "selector": "BottomNavItem", "trigger": "ON_CLICK", "action": "NODE" },
+    { "selector": "TableRow", "trigger": "ON_CLICK", "action": "NODE" },
+    { "selector": "ListItem", "trigger": "ON_CLICK", "action": "NODE" },
+    { "selector": "Button", "trigger": "ON_CLICK", "action": "NODE_OR_OVERLAY" },
+    { "selector": "Badge", "trigger": "ON_CLICK", "action": "NODE_FILTERED" }
+  ],
+  "overlays": [
+    { "id": "overlay-reject", "title": "Reject Reason Modal" },
+    { "id": "overlay-deadline", "title": "Deadline Config Modal" },
+    { "id": "overlay-feedback", "title": "Feedback Modal" },
+    { "id": "overlay-assign", "title": "Assign Exhibitor Modal" }
+  ]
+}
