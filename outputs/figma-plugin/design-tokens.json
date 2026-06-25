@@ -1,0 +1,154 @@
+{
+  "global": {
+    "color": {
+      "primary": {
+        "value": "#1677FF",
+        "type": "color"
+      },
+      "primaryHover": {
+        "value": "#4096FF",
+        "type": "color"
+      },
+      "primaryLight": {
+        "value": "#EAF3FF",
+        "type": "color"
+      },
+      "success": {
+        "value": "#16A34A",
+        "type": "color"
+      },
+      "successLight": {
+        "value": "#E8F7EF",
+        "type": "color"
+      },
+      "warning": {
+        "value": "#D48806",
+        "type": "color"
+      },
+      "warningLight": {
+        "value": "#FFF4DE",
+        "type": "color"
+      },
+      "danger": {
+        "value": "#DC2626",
+        "type": "color"
+      },
+      "dangerLight": {
+        "value": "#FEECEC",
+        "type": "color"
+      },
+      "info": {
+        "value": "#2563EB",
+        "type": "color"
+      },
+      "infoLight": {
+        "value": "#EAF3FF",
+        "type": "color"
+      },
+      "bg": {
+        "value": "#F3F6FB",
+        "type": "color"
+      },
+      "surface": {
+        "value": "#FFFFFF",
+        "type": "color"
+      },
+      "sidebar": {
+        "value": "#10233F",
+        "type": "color"
+      },
+      "border": {
+        "value": "#E5EAF2",
+        "type": "color"
+      },
+      "text": {
+        "value": "#172033",
+        "type": "color"
+      },
+      "textSecondary": {
+        "value": "#667085",
+        "type": "color"
+      },
+      "textTertiary": {
+        "value": "#98A2B3",
+        "type": "color"
+      }
+    },
+    "spacing": {
+      "xxs": {
+        "value": 4,
+        "type": "dimension"
+      },
+      "xs": {
+        "value": 8,
+        "type": "dimension"
+      },
+      "sm": {
+        "value": 12,
+        "type": "dimension"
+      },
+      "md": {
+        "value": 16,
+        "type": "dimension"
+      },
+      "lg": {
+        "value": 24,
+        "type": "dimension"
+      },
+      "xl": {
+        "value": 32,
+        "type": "dimension"
+      }
+    },
+    "radius": {
+      "xs": {
+        "value": 4,
+        "type": "dimension"
+      },
+      "sm": {
+        "value": 8,
+        "type": "dimension"
+      },
+      "md": {
+        "value": 12,
+        "type": "dimension"
+      }
+    },
+    "fontSize": {
+      "xs": {
+        "value": 12,
+        "type": "dimension"
+      },
+      "sm": {
+        "value": 14,
+        "type": "dimension"
+      },
+      "md": {
+        "value": 16,
+        "type": "dimension"
+      },
+      "lg": {
+        "value": 18,
+        "type": "dimension"
+      },
+      "xl": {
+        "value": 24,
+        "type": "dimension"
+      }
+    }
+  },
+  "$themes": [
+    {
+      "id": "exhibition-service-light",
+      "name": "Light",
+      "selectedTokenSets": {
+        "global": "enabled"
+      }
+    }
+  ],
+  "$metadata": {
+    "tokenSetOrder": [
+      "global"
+    ]
+  }
+}
